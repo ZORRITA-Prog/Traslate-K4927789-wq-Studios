@@ -58,7 +58,7 @@
 3. **Acceso:**
    Navega a la ruta principal desde tu navegador web:
    ```text
-   http://localhost/Trastale-V6/index.html
+   https://zorrita-prog.github.io/Traslate-K4927789-wq-Studios/
    ```
 
 ---
