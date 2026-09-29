@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trastale-K4927789-wq-Studio</title>
+<link rel="icon" href="https://inmiku.infinityfreeapp.com/u/ImMiku_541d421d.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#0d0916">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.1.0/tesseract.min.js"></script>
+</head><body>
+<header>
+<div class="top"><select id="ui" onchange="setUI(this.value)"></select>
+<span id="who"></span><button class="o" id="bin" onclick="openAuth()" data-i="login"></button><button class="o" id="bout" onclick="logout()" style="display:none" data-i="logout"></button></div>
+<div class="brand"><img src="https://inmiku.infinityfreeapp.com/u/ImMiku_8a4a9b17.jpg" alt=""><h1>Trastale<span>K4927789-wq-Studio</span></h1><div data-i="sub"></div></div>
+<nav id="nav"></nav></header>
+<main>
+<section class="sec on card" id="s-text"><h2 data-i="text"></h2><div class="row langs"></div><textarea id="t-in" data-p="ph"></textarea><div class="row"><button onclick="doText()" data-i="go"></button><span class="cnt" id="c-text"></span></div><div class="out" id="t-out"></div></section>
+<section class="sec card" id="s-doc"><h2 data-i="doc"></h2><div class="row langs"></div><input type="file" id="d-in" accept=".txt,.md,.csv,.srt,.html,.json"><div class="row"><button onclick="doDoc()" data-i="go"></button><span class="cnt" id="c-doc"></span></div><div class="cnt" data-i="docnote"></div><div class="out" id="d-out"></div><button onclick="dl()" data-i="dl"></button></section>
+<section class="sec card" id="s-img"><h2 data-i="img"></h2><div class="row langs"></div><input type="file" id="i-in" accept="image/*"><div class="row"><button onclick="doImg()" data-i="go"></button><span class="cnt" id="c-img"></span></div><div class="out" id="i-out"></div></section>
+<section class="sec card" id="s-aud"><h2 data-i="aud"></h2><div class="row langs"></div><div class="row"><button id="mic" onclick="doAud()"><span data-i="rec"></span></button><span class="cnt" id="c-aud"></span></div><div class="out" id="a-out"></div></section>
+<section class="sec card" id="s-voc"><h2 data-i="voc"></h2><div class="row"><input id="v-in" placeholder="carrot, juez, chat..." onkeydown="if(event.key=='Enter')doVoc()"><button onclick="doVoc()" data-i="find"></button></div><div class="row"><select id="v-src"><option value="all" data-i="all"></option><option value="wen">Wiktionary (English)</option><option value="wes">Wikcionario (Español)</option><option value="wfr">Wiktionnaire (Français)</option><option value="wde">Wiktionary (Deutsch)</option><option value="wpt">Wikcionário (Português)</option><option value="wit">Wikizionario (Italiano)</option><option value="fd">Free Dictionary API (English)</option><option value="wp">Wikipedia</option></select><select id="v-to"></select></div><div class="out" id="v-out"></div></section>
+<section class="sec card" id="s-usr"><h2 data-i="usr"></h2><input id="q" style="width:100%" placeholder="k4927789-wq" oninput="dq()"><div id="ulist"></div></section>
+<section class="sec card" id="s-prof"><h2 data-i="prof"></h2><div id="prof"></div></section>
+<section class="sec card" id="s-adm"><h2>Admin</h2><div id="admin"></div></section>
+</main>
+<footer><span data-i="by"></span> <b>k4927789-wq Studios</b></footer>
+<div id="modal"><div class="card"><h3 id="mt"></h3><div id="mtxt" class="cnt"></div>
+<input id="m-u" data-p="user"><input id="m-e" type="email" data-p="email"><input id="m-p" type="password" data-p="pass">
+<div class="row"><button onclick="submitAuth()" data-i="ok"></button><button class="o" onclick="switchMode()" data-i="sw"></button><button class="o" onclick="closeM()">×</button></div>
+<div class="cnt" data-i="notice" style="margin:4px 0 12px;font-size:.78rem"></div><button class="gbtn" id="gbtn" onclick="googleLogin()">Continuar con Google</button><div id="merr" style="color:#e5384f;margin-top:8px"></div></div></div>
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/api.js"></script>
+<script src="js/local.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/translate.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/profile.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/main.js"></script>
+</body></html>
