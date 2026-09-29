@@ -29,30 +29,6 @@
 
 ---
 
-## Arquitectura del Proyecto
-
-```text
-Trastale-V6/
-├── api/
-│   ├── data/
-│   │   └── .htaccess
-│   └── api.php
-├── css/
-│   └── style.css
-├── js/
-│   ├── admin.js
-│   ├── api.js
-│   ├── auth.js
-│   ├── config.js
-│   ├── local.js
-│   ├── main.js
-│   ├── profile.js
-│   ├── translate.js
-│   ├── ui.js
-│   └── utils.js
-├── index.html
-└── LEEME.txt
-```
 
 ---
 
